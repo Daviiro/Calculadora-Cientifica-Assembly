@@ -56,6 +56,7 @@ type
 
 var
   Form1: TForm1;
+  num, answer : real;
 
 implementation
 

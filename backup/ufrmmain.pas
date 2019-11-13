@@ -43,6 +43,7 @@ type
     procedure btnDigit9Click(Sender: TObject);
     procedure btnFunction1Click(Sender: TObject);
     procedure btnFunction2Click(Sender: TObject);
+    procedure btnFunction3Click(Sender: TObject);
     procedure btnFunctionClick(Sender: TObject);
     procedure edDisplayChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -55,6 +56,7 @@ type
 
 var
   Form1: TForm1;
+  num, answer : real;
 
 implementation
 
@@ -148,6 +150,11 @@ end;
 procedure TForm1.btnFunction2Click(Sender: TObject);
 begin
   edDisplay.Text := edDisplay.Text + '*'
+end;
+
+procedure TForm1.btnFunction3Click(Sender: TObject);
+begin
+  edDisplay.Text := edDisplay.Text + '/'
 end;
 
 procedure TForm1.btnFunctionClick(Sender: TObject);
